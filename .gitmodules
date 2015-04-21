@@ -1,0 +1,3 @@
+[submodule "XWebView"]
+	path = XWebView
+	url = git@github.com:XWebView/XWebView.git
