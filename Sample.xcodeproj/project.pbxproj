@@ -20,14 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EEEF22591AE65654009582E1 /* PBXContainerItemProxy */ = {
+		EEF27D5B1AE909A0004740CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EEEF22541AE65654009582E1 /* XWebView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EE62683519FA323900EFC3F8;
 			remoteInfo = XWebView;
 		};
-		EEEF225B1AE65654009582E1 /* PBXContainerItemProxy */ = {
+		EEF27D5D1AE909A0004740CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EEEF22541AE65654009582E1 /* XWebView.xcodeproj */;
 			proxyType = 2;
@@ -57,14 +57,14 @@
 		ABE516A81A00ADDE0025A92E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sample/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		ABE516A91A00ADDE0025A92E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sample/ViewController.swift; sourceTree = "<group>"; };
 		ABE516B31A00AEE60025A92E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sample/Info.plist; sourceTree = SOURCE_ROOT; };
-		EE0E49091A5C72DB002D95B8 /* XWebView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWebView.framework; path = "Build/Products/Debug-iphonesimulator/XWebView.framework"; sourceTree = "<group>"; };
+		EE0E49091A5C72DB002D95B8 /* XWebView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWebView.framework; path = "XWebView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2F486D1AE0E6D70088AF67 /* Echo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Echo.swift; sourceTree = "<group>"; };
 		EE2F486F1AE0E7D70088AF67 /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		EE2F48711AE0E8540088AF67 /* Vibrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vibrate.m; sourceTree = "<group>"; };
 		EE2F48741AE0EAE70088AF67 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = Sample/index.html; sourceTree = "<group>"; };
 		EE2F48761AE0F1FC0088AF67 /* Vibrate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vibrate.h; sourceTree = "<group>"; };
 		EE2F48771AE0F2F10088AF67 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = Sample/BridgingHeader.h; sourceTree = "<group>"; };
-		EEEF22541AE65654009582E1 /* XWebView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XWebView.xcodeproj; path = ../../XWebView/XWebView.xcodeproj; sourceTree = "<group>"; };
+		EEEF22541AE65654009582E1 /* XWebView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XWebView.xcodeproj; path = XWebView/XWebView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +124,11 @@
 			path = Sample/Plugins;
 			sourceTree = "<group>";
 		};
-		EEEF22551AE65654009582E1 /* Products */ = {
+		EEF27D571AE909A0004740CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EEEF225A1AE65654009582E1 /* XWebView.framework */,
-				EEEF225C1AE65654009582E1 /* XWebViewTests.xctest */,
+				EEF27D5C1AE909A0004740CF /* XWebView.framework */,
+				EEF27D5E1AE909A0004740CF /* XWebViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EEEF22551AE65654009582E1 /* Products */;
+					ProductGroup = EEF27D571AE909A0004740CF /* Products */;
 					ProjectRef = EEEF22541AE65654009582E1 /* XWebView.xcodeproj */;
 				},
 			);
@@ -193,18 +193,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EEEF225A1AE65654009582E1 /* XWebView.framework */ = {
+		EEF27D5C1AE909A0004740CF /* XWebView.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = XWebView.framework;
-			remoteRef = EEEF22591AE65654009582E1 /* PBXContainerItemProxy */;
+			remoteRef = EEF27D5B1AE909A0004740CF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EEEF225C1AE65654009582E1 /* XWebViewTests.xctest */ = {
+		EEF27D5E1AE909A0004740CF /* XWebViewTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = XWebViewTests.xctest;
-			remoteRef = EEEF225B1AE65654009582E1 /* PBXContainerItemProxy */;
+			remoteRef = EEF27D5D1AE909A0004740CF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -335,6 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Sample/BridgingHeader.h;
@@ -348,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Sample/BridgingHeader.h;

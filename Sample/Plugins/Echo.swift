@@ -25,7 +25,7 @@ class Echo: NSObject, XWVScripting {
 
     init(prefix: AnyObject?) {
         if prefix is String {
-            self.prefix = prefix as String
+            self.prefix = prefix as! String
         } else if let num = prefix as? NSNumber {
             self.prefix = num.stringValue
         }
