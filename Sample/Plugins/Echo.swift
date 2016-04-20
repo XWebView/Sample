@@ -20,7 +20,7 @@ class Echo: NSObject {
     dynamic var prefix: String = ""
 
     func echo(message: String, callback: XWVScriptObject) {
-        callback.call(arguments: [prefix + message], resultHandler: nil)
+        callback.call(arguments: [prefix + message], completionHandler: nil)
     }
 }
 
@@ -34,6 +34,6 @@ extension Echo : XWVScripting {
         }
     }
     class func scriptNameForSelector(selector: Selector) -> String? {
-        return selector == Selector("initWithPrefix:") ? "" : nil
+        return selector == #selector(Echo.init(prefix:)) ? "" : nil
     }
 }
