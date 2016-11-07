@@ -20,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		92B219A71DD07A5F00C83B62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEEF22541AE65654009582E1 /* XWebView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 663C48C21CC034270031251A;
+			remoteInfo = XWebViewX;
+		};
 		EEEF22591AE65654009582E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EEEF22541AE65654009582E1 /* XWebView.xcodeproj */;
@@ -129,6 +136,7 @@
 			children = (
 				EEEF225A1AE65654009582E1 /* XWebView.framework */,
 				EEEF225C1AE65654009582E1 /* XWebViewTests.xctest */,
+				92B219A81DD07A5F00C83B62 /* XWebViewX.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 					AB603B9719EA58CB00DECF78 = {
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = FHS4D2LW78;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -195,6 +204,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		92B219A81DD07A5F00C83B62 /* XWebViewX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XWebViewX.framework;
+			remoteRef = 92B219A71DD07A5F00C83B62 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		EEEF225A1AE65654009582E1 /* XWebView.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -347,6 +363,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Sample/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -364,6 +381,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Sample/BridgingHeader.h;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
