@@ -18,16 +18,16 @@ import UIKit
 import XWebView
 
 class HelloWorld {
-    @objc func show(text: AnyObject?) {
-        dispatch_async(dispatch_get_main_queue()) {
+    @objc func show(_ text: Any?) {
+        DispatchQueue.main.async {
             alert(title: text as? String, message: nil)
         }
     }
 }
 
-private func alert(title title: String?, message: String?) {
-    guard let root = UIApplication.sharedApplication().keyWindow?.rootViewController else { return }
-    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-    root.presentViewController(alert, animated: true, completion: nil)
+private func alert(title: String?, message: String?) {
+    guard let root = UIApplication.shared.keyWindow?.rootViewController else { return }
+    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+    root.present(alert, animated: true, completion: nil)
 }

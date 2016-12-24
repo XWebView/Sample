@@ -30,13 +30,13 @@ class ViewController: UIViewController {
         webview.loadPlugin(HelloWorld(), namespace: "sample.hello")
         webview.loadPlugin(Vibrate(), namespace: "sample.vibrate")
 
-        let bundle = NSBundle.mainBundle()
-        if let url = bundle.URLForResource("index", withExtension: "html") {
-            webview.loadFileURL(url, allowingReadAccessToURL: bundle.resourceURL!)
+        let bundle = Bundle.main
+        if let url = bundle.url(forResource: "index", withExtension: "html") {
+            webview.loadFileURL(url, allowingReadAccessTo: bundle.resourceURL!)
         }
     }
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden: Bool {
         return true
     }
 }

@@ -19,7 +19,7 @@ import XWebView
 class Echo: NSObject {
     dynamic var prefix: String = ""
 
-    func echo(message: String, callback: XWVScriptObject) {
+    func echo(_ message: String, callback: XWVScriptObject) {
         callback.call(arguments: [prefix + message], completionHandler: nil)
     }
 }
@@ -33,7 +33,7 @@ extension Echo : XWVScripting {
             self.prefix = num.stringValue
         }
     }
-    class func scriptNameForSelector(selector: Selector) -> String? {
+    class func scriptName(for selector: Selector) -> String? {
         return selector == #selector(Echo.init(prefix:)) ? "" : nil
     }
 }
